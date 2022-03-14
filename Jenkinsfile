@@ -44,7 +44,7 @@ pipeline {
       steps {
         echo 'Deploy application'
         script {
-          sh 'oc new-app https://github.com/chongdershubhayu/openshift-python-sample.git --strategy=docker --context-dir=/src'
+          sh 'oc new-app https://github.com/chongdershubhayu/openshift-python-sample.git#main --strategy=docker --context-dir=/src'
         }
 
       }
